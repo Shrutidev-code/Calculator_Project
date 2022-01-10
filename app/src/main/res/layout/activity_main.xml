@@ -10,7 +10,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/input"
+        android:id="@+id/inputBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="150dp"
@@ -69,7 +69,7 @@
             android:textSize="40sp"
             android:layout_weight="1"
             android:backgroundTint="@color/teal_200"
-            android:onClick="cleanInput"/>
+            android:onClick="getOperator"/>
     </TableRow>
         <TableRow
             android:layout_height="match_parent"
@@ -250,7 +250,7 @@
         android:textSize="40sp"
         android:layout_weight="1"
         android:layout_marginRight="1pt"
-        android:onClick="getNumbers"/>
+        android:onClick="equaloperator"/>
 </LinearLayout>
 
 
