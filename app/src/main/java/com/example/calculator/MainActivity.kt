@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        inputbox=findViewById(R.id.input)
+        inputbox=findViewById(R.id.inputbox)
     }
     var dot:Boolean=false
     var newop:Boolean=true
@@ -92,16 +92,16 @@ class MainActivity : AppCompatActivity() {
         var result:Double?=null
         when(operator){
             "x"->{
-                result=oldNum.toDouble()*newNum.toDouble()
+                result=oldNum.toDouble() * newNum.toDouble()
             }
             "+"->{
-                result=oldNum.toDouble()+newNum.toDouble()
+                result=oldNum.toDouble() + newNum.toDouble()
             }
             "-"->{
-                result=oldNum.toDouble()-newNum.toDouble()
+                result=oldNum.toDouble() - newNum.toDouble()
             }
             "/"->{
-                result=oldNum.toDouble()/newNum.toDouble()
+                result=oldNum.toDouble() / newNum.toDouble()
             }
         }
         inputbox.text=result.toString()
